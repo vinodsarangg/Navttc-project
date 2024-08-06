@@ -1,88 +1,239 @@
-body{
+body {
     background-color: #f5f4f4;
+    margin: 0;
+    padding: 10PX;
+    font-family: Arial, sans-serif;
 }
-.navbar{
-    background-color: #eae7e7;
-    position: absolute;
-    top: 0px;
+
+.navbar {
+    background-color: cadetblue;
+   
+    width: 100%;
     height: 70px;
-    width:100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-sizing: border-box; /* Ensure padding is included in width */
 }
-.logo img{
+
+.logo img {
     height: 50px;
     width: 55px;
-    float: left;
-    position: relative;
-   padding: 12px;
-    border-radius: 20px 20px 20px 20px ;
-}
-/* .navbar a{
-  
-    text-align: center;
-    float: right;
-    text-align: center;
-     padding: 14px 16px;
-   text-decoration: none;
-  font-size: 17px;
-position: relative;
- bottom: 56px;
-} */
-.navbar ul li{
-   
-    float: right;
-    font-size: 16px;
-    padding: 16px 20px;
-    list-style-type: none;
-  
-    
-   
-    
-}
-.navbar ul li a{
-    text-decoration: none;
+    border-radius: 20px;
 }
 
-.card{
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+    gap: 1px;
+}
+
+.navbar ul li {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.card {
     background-color: #fff;
     text-align: center;
-    width: 25%;
-    position: absolute;
-    left: 560px;
-   bottom: 3px;
-   border-radius: 7px;
-   height:480px;
-
-   
+    width: 300px; /* Adjust width as needed */
+    margin: 100px auto 50px; /* Center card and add space from top and bottom */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    box-sizing: border-box;
 }
 .card:hover{
     box-shadow: red  ;
     box-shadow: 2px 2px 5px 2px red;
    
 }
-.card:hover a{
+.card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
 
+.card h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.card a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.card a:hover {
     text-decoration: underline;
 }
-.card img{
-    border-radius: 450px 450px 450px 450px;
+
+.footer {
+    background-color:   cadetblue;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    /* position: fixed;
+    bottom: 0;
+    left: 0; */
+    width: 100%;
+    box-sizing: border-box; 
+
+}
+
+/* Index.html Css */
+.container{
+    background-color: red;
+    height: 625px;
+    background-image: url(media/bg-image.jpg);
+    background-size: cover;
+}
+.container h1{
     position: relative;
-    text-decoration: underline;
+    left: 250px;
+    top: 300px;
+}
+.container h3{
+    position: relative;
+    left: 250px;
+    top: 310px;
+  
+}
+.main{
+    display: flex;
+    flex-direction: row;
+}
+.video{
+    height: 415px;
+        
+}
+button{
+    border: 2px solid black;
+    background-color: rgb(40, 215, 72);
+    height: 50px;
+    width: 150px;
+    border-radius: 20px 20px 20px 20px ;
+    font-size: 16px;
+  
+}
+button:hover{
+    background-color: rgb(205, 205, 209);
+    height: 50px;
+    width: 150px;
+    border-radius: 20px 20px 20px 20px ;
+  
+}
+.icons img{
+height: 35px;
+border-radius: 20px 20px 20px 20px;
+}
+
+/* Form.html Css */
+
+.login_card {
+    display: flex;
+    flex-direction: column;
+    background-color: cadetblue;
+    /* background-color: #ede5e2; */
+    text-align: center;
+    width: 400px; 
+    height: auto;
+    margin: 100px auto; 
+    border-radius: 7px;
+    padding: 20px;
+    box-sizing: border-box; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     
 }
-.card a{
-    text-decoration: none;
+
+input ,label ,textarea{
+ display: flex;
+ flex-direction: row;
+ width: 310px;
+ border-radius: 3px;
 
 }
-.footer{
-    background-color: #eae7e7;
-height: 70px;
-position: relative;
-top: 750px;
-text-align: center;
-font-size: 20px;
+input{
+    height: 20px;
+}
+label{
+    position: relative;
+    top: 15px;
+}
+.form_button{
+    /* display: flex;
+    flex-direction: row; */
+    border: 2px solid black;
+    background-color: rgb(40, 215, 72);
+    height: 30px;
+    width:210px;
+    position: relative;
+    right: 22px;
+   
+    border-radius: 10px 10px 10px 10px ;
+    font-size: 16px;
+    align-items: center;
+    text-align: center;
+    position: relative;
 
 }
-footer{
-position: relative;
-top: 35px;
+.form_button:hover{
+    background-color: rgb(205, 205, 209);
+    height: 30px;
+    width:210px;
+    border-radius: 10px 10px 10px 10px ;
+    position: relative;
+    right: 22px;
+  
 }
+
+
+/* Register.html */
+
+#Select_city ,option{
+    display: flex;  
+    flex-direction: row;
+    position: relative;
+     left: 50px;
+    bottom:20px;
+    width: 150px;
+    height: 25px;
+    border-radius: 10px 10px 10px 10px ;
+
+
+}
+
+.radio-group label strong {
+    display: inline-block;
+    margin-right: 1px;
+    text-align: left;
+      
+     
+}
+ input[type="radio"] {
+            display: inline-block;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            right: 12px;
+            top: 18px;
+
+        }
+       
